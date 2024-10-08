@@ -17,6 +17,8 @@ def hitung_luas(lebar,panjang):
     LUAS = panjang * lebar
     return LUAS
 
+hitung_luas2 = lambda lebar,panjang : panjang * lebar
+
 def hitung_keliling(lebar,panjang):
     '''fungsi keliling'''
     KELILING = 2 * (lebar + panjang)
@@ -30,7 +32,7 @@ def display(pesan,value):
 while True:
     header()
     LEBAR,PANJANG = input_user()
-    LUAS = hitung_luas(LEBAR,PANJANG)
+    LUAS = hitung_luas2(LEBAR,PANJANG)
     KELILING = hitung_keliling(LEBAR,PANJANG)
     display(f"luas", KELILING)
     display(f"keliling", LUAS)

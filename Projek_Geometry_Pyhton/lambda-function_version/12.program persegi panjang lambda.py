@@ -1,6 +1,8 @@
-# ini adalah program menghitung luas dan keliling persegi panjang
+# ini adalah program menghitung luas dan keliling persegi panjang dengan lambda
 # dibuat pada 08/10/2024
 # dibuat oleh Rafa Khadafi
+import os
+os.system("cls")
 print(30*"\033[92m=")
 print("PROGRAM PERSEGI PANJANG LAMBDA")
 print(30*"\033[92m=")
@@ -9,8 +11,10 @@ lebar = int(input("masukan nilai lebar = "))
 luas = lambda s,l : s * l
 keliling = lambda s,l : 2 * (s + l)
 
-print(f"hasil luasnya adalah = {luas(sisi,lebar)}")
-print(f"hasil kelilingnya adalah = {keliling(sisi)}")
+print(f"hasil luasnya adalah = {luas(sisi,lebar):.2f}")
+print(f"hasil kelilingnya adalah = {keliling(sisi):.2f}")
 
 
-# kalo cuma satu perintah 
+# lmmbda itu berada didalam variable
+# luas = lambda s : s * s
+# nah s ini adalah variable local

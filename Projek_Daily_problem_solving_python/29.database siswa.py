@@ -1,3 +1,6 @@
+# ini merupakan sebuah program membuat database siswa
+# di buat pada 18/10/2024
+# di buat oleh Rafa Khadafi
 import os
 import datetime
 import random

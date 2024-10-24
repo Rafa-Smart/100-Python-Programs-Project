@@ -9,7 +9,7 @@ print(35*"\033[34m=")
 
 username = (input("silahkan masukan password = "))
 
-if username == "putri my house":
+if username == "siti jamaluddin":
     print("anda benar, silahkan masuk")
 else:
     print("passoword yang anda masukan salah")

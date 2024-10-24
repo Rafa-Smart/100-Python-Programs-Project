@@ -4,7 +4,7 @@
 import os
 os.system("cls")
 print(30*"\033[92m=")
-print("PROGRAM LING KARAN LAMBDA")
+print("PROGRAM LINGKARAN LAMBDA")
 print(30*"\033[92m=")
 
 PHI = 22/7

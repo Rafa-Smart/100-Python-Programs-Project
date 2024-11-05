@@ -1,3 +1,12 @@
+# ini adalah program membuat latihan dengan oop
+# dibuat pada 26/10/2024
+# dibuat oleh rafa khadafi
+import os
+os.system("cls")
+print(30*"\033[92m=")
+print("PROGRAM MEMBUAT LATIHAN OOP")
+print(30*"\033[92m=")
+print()
 # oop = objek oriented program
 # inherite = anakan / warisan dari class induknya
 # encapsulation = membuat atribut yang hanya bisa diakses di class tersebut saja

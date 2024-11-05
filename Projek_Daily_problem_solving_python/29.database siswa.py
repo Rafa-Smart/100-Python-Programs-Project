@@ -22,7 +22,7 @@ while True:
         "lahir": datetime.datetime(2000, 11, 11)
     }
 
-    # untuk memasukan data di dict data template ke dict siswa
+    # untuk memasukan data di dict data template ke dict siswa berdasarkan keynya
     siswa = dict.fromkeys(data_template.keys())
 
     # Mengambil input user

@@ -8,11 +8,6 @@ print(30*"\033[92m=")
 print("PROGRAM KERUCUT LAMBDA")
 print(30*"\033[92m=")
 
-PHI = 22/7
-sisi_miring = math.sqrt(r**2 + tinggi**2)
-LUAS_ALAS = r ** 2 * PHI
-LUAS_SELIMUT = r * PHI * sisi_miring
-
 def input_user():
     '''mengambil input user'''
     global r
@@ -21,6 +16,11 @@ def input_user():
     tinggi = float(input("masukan nilai tinggi kerucut = "))
     return r,tinggi
 r,tinggi = input_user()
+PHI = 22/7
+sisi_miring = math.sqrt(r**2 + tinggi**2)
+LUAS_ALAS = r ** 2 * PHI
+LUAS_SELIMUT = r * PHI * sisi_miring
+
 
 volume_kerucut = lambda r,tinggi : r ** 2 * PHI * 1/3 * tinggi
 luas_kerucut = lambda LUAS_ALAS,LUAS_SELIMUT : LUAS_ALAS + LUAS_SELIMUT

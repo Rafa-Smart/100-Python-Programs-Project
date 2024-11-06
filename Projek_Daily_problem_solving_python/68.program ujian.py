@@ -18,7 +18,5 @@ for i,nilai in list.items():
 jawaban = str(input("masukan jawaban anda = "))
 if jawaban == "c":
     print("jawaban anda benar")
-elif jawaban == 'b':
-    print("jawaban anda salah")
 else:
     print("jawaban anda salah")

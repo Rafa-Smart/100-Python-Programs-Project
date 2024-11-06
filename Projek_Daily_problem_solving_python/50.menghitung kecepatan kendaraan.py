@@ -4,7 +4,7 @@
 import os
 os.system("cls")
 print(30*"\033[92m=")
-print("PROGRAM MENGHITUNG KECEPTAN KENDARAAN")
+print("PROGRAM MENGHITUNG KECEPATAN KENDARAAN")
 print(30*"\033[92m=")
 
 while True:

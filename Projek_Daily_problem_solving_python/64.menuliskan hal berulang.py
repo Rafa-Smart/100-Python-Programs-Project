@@ -13,3 +13,5 @@ inputan = str(input("masukan jawaban anda = "))
 if inputan == "putri":
     for i in range(1, 101):
         print(f"{i}.lupakan saja, dia bukan milikmu")
+else:
+    print(f"bagus, fikirkan saja {inputan}")

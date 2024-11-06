@@ -25,9 +25,9 @@ while True:
             break
         while True:
             isdone = str(input("apakah sudah beres ? (y/t) = "))
-            if isdone == "y":
+            if isdone == "t":
                 break
-            elif isdone == "t":
+            elif isdone == "y":
                 print("TERIMA KASIH")
                 exit()
             else:

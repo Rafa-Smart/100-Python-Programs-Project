@@ -10,7 +10,6 @@ print(30*"\033[92m=")
 #  membuat Fungsi untuk mengecek apakah tahun kabisat
 def is_kabisat(tahun):
     return (tahun % 4 == 0 and tahun % 100 != 0) or (tahun % 400 == 0)
-
 # Input tahun dari user
 tahun_input = int(input("Masukkan tahun: "))
 

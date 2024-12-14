@@ -1,28 +1,21 @@
 import cv2
 
+# Muat model deteksi wajah
 face_referensi = cv2.CascadeClassifier("face_referensi.xml")
 camera = cv2.VideoCapture(0)
 
 def deteksi_wajah(frame):
+    # Ubah frame menjadi grayscale
     alat_pengoptimal = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+    # Deteksi wajah
     wajah = face_referensi.detectMultiScale(alat_pengoptimal, scaleFactor=1.1)
     return wajah
 
 def menggambar_kotak_wajah(frame):
+    # Dapatkan koordinat wajah
     for x, y, lebar, tinggi in deteksi_wajah(frame):
+        # Gambar kotak di sekitar wajah
         cv2.rectangle(frame, (x, y), (x + lebar, y + tinggi), (255, 0, 0), thickness=4)
-
-def menggambar_kotak_nama(frame, nama):
-    for x, y, lebar, tinggi in deteksi_wajah(frame):
-        # Hitung ukuran teks
-        teks_size = cv2.getTextSize(nama, cv2.FONT_HERSHEY_SIMPLEX, fontScale=0.5, thickness=4)[0]
-        
-        # Koordinat untuk sudut kanan bawah kotak
-        x2 = x + teks_size[0] + 10  # Tambah padding di kanan
-        y2 = y - teks_size[1] - 10   # Tambah padding di atas
-        
-        # Gambar kotak untuk nama
-
 
 def keluar_program():
     camera.release()
@@ -31,11 +24,14 @@ def keluar_program():
 
 def main():
     while True:
-        nama = "HALLOO CANTTIIK"
+        # Baca frame dari kamera
         _, frame = camera.read()
+        frame = cv2.flip(frame,1)
+        # Gambar kotak di sekitar wajah
         menggambar_kotak_wajah(frame)
-        menggambar_kotak_nama(frame, nama)
+        # Tampilkan frame
         cv2.imshow("program face_detection", frame)
+        # Keluar jika tombol 'l' ditekan
         if cv2.waitKey(1) & 0xFF == ord("l"):
             keluar_program()
 

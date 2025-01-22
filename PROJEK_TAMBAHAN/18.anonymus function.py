@@ -14,9 +14,9 @@ data_hasil = pangkat(5,2)
 # dengan curriying
 def pangkat_asli(n:int) -> int:
     return lambda angka : angka ** n
-pangkat2 = pangkat(2) # ini adalah argumen dari fungsinya yaitu si n
+pangkat2 = pangkat_asli(2) # ini adalah argumen dari fungsinya yaitu si n
 print(f"pangkat 2 = {pangkat2(5)}")
-pangkat3 = pangkat(3) # ini adalah argumen dari si lambda yaitu si angka
+pangkat3 = pangkat_asli(3) # ini adalah argumen dari si lambda yaitu si angka
 print(f"pangkat 3 = {pangkat3(5)}")
 
 

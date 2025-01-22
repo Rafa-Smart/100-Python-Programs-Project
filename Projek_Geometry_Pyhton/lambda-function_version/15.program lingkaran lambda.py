@@ -11,8 +11,8 @@ PHI = 22/7
 
 def input_user():
     '''mengambil input dari user'''
-    r = float(input("masukan jari jari lingkaran = "))
-    return r
+    iniBebas = float(input("masukan jari jari lingkaran = "))
+    return iniBebas
 
 '''rumus menghitung luas lingkaran'''
 luas_lingkaran = lambda r : r ** 2 * PHI
